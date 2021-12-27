@@ -1,0 +1,154 @@
+<!DOCTYPE>
+   <html>
+      <head>
+	     <meta charset="utf-8">
+		 <meta name="description" content="register to get access">
+		 <meta name="viewport" content="width=device-width, intial-scale=1.0">
+		 <meta http_equiv="refresh" content="30">
+		 <title>signup</title>
+	  </head>
+	  
+	  <body style="background-color: #F5F5F5" align="middle">
+	  
+	  <table width="100%">
+
+		<tr>
+
+			<td width = "10%"> </td>
+			<td width = "50%"> <p style="color:#145FC1"><font face="Arial" size = "6"><img src= "../img/Abshir_logo.png" alt = "This is logo" width = "90px" height="100px" align="bottom"></font></p>
+			</td>
+
+			<td> 
+				<p align = "right"> <font face="Arial" size = "4" >
+				    <a href="index.html">Home |</a>
+					<a href = "signup.html"> Signup |</a>
+					<a href = "signin.html"> Signin</a>
+				</font>
+				</p>
+			</td>
+			<td width = "10%"> </td>
+		</tr>
+	</table>
+
+	<hr />
+	
+
+	  <table align="center">
+	  
+	  <tr>
+	  
+	  <h2 align="center">Registor Here</h2><br><br>
+	  
+	  <td width = "50%>
+	  
+	 
+	     <form action="index.html" class="pure-form" >
+		 
+		    
+			<fieldset>
+			
+			<legend align="center">Profile</legend>
+		    
+			<label for="user_name">username</label><br>
+			<input id="user_name" type="text" name="user name"  required placeholder="username" ><br><br>
+			
+            <label for="psd">password</label><br>
+            <input id="psd" type="password" name="password" required maxlength="15" minlength="8" placeholder="password"><br><br>
+			   
+			   <label for="c-psd">confirm password</label><br>
+               <input id="c-psd" type="password" name="confirm password" required maxlength="15" minlength="8" placeholder="confirm password"><br><br>
+			   
+			   <label for="mail">Email</label> <br>
+			   <input id="mail" type="email" name="email" required placeholder="email" size="25%"><br><br>
+			   
+			   <label for="acctype">Account type</label>
+			   <select id="acctype" name="Account type" size="1">
+			   
+			      <option value="per">Personal</option>
+				  <option value="brok">Broker</option>
+				  <option value="other">Other</option>
+			   
+			   </select><br><br>
+			   
+			</fieldset><br><br>
+			
+			</td>
+			
+			<td width = "50%">
+			
+			
+			<fieldset style="width:500px">
+			
+			<legend align="center">Personal information</legend>
+			   
+			   <label for="firstname">First Name</label><br>
+			   <input id="firstname" type="text" maxlength="15" required size="30%"><br><br>
+			   
+			   <label for="lastname">Last Name</label><br>
+			   <input id="lastname" type="text" maxlength="15" size="30%"><br><br>
+			   
+			   <label for="phone"> Phone</label><br>
+			   <input id="phone" type="tel" name="phone" size="30%"><br><br>
+
+			      
+			   
+			<label for="sex">Gender</label><br>
+            <input id="sex" type="radio" name="gender" value="Male" checked>Male
+            <input id="sex" type="radio" name="gender" value="Female">Female
+	        <input id="sex" type="radio" name="gender" value="Other">Other<br><br>
+			
+			<label for="city">City</label>
+			<select id="city" name="city" size="1">
+			
+			   <option value="AA">Addis Ababa</option>
+			   <option value="Naz">Adama(Nazret)</option>
+			   <option value="Arb">Arbaminch</option>
+			   <option value="Bd">Bahir Dar</option>
+			   <option value="Des">Dessie</option>
+			   <option value="Dire">Dire Dawa</option>
+			   <option value="Gig">Gigiga</option>
+			   <option value="Hawa">Hawasa</option>
+			   <option value="Gon">Gonder</option>
+			   <option value="Har">Harar</option>
+			   <option value="Mek">Mekele</option>
+			   
+			</select><br><br>
+			
+			
+			</fieldset><br><br>
+			
+			
+			</td>
+			
+			 </tr>
+		 
+		 <tr align="right">
+		 
+		 <td>
+			<input  type="reset" value="Reset">
+			<input type="submit" value="Submit">
+			
+		   </td>
+		 
+		 </tr>
+		 
+		 </form>
+		 
+		 </table>
+		 
+		 <hr>
+		 
+		 <tr>
+			<td> 
+				<p align = "left"> <font face="Arial" size = "4" ><a href = "index.html"> Podcast | </a>
+					<a href = "article.html"> Articles |</a>
+					<a href = "aboutus.html"> About Us |</a>
+					<a href = "contact_us.html"> Contact Us</a>
+				</font>
+				</p>
+			</td>
+			<td width = "10%"> </td>
+		</tr>
+	  
+	  </body>
+   </html>

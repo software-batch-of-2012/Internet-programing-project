@@ -1,0 +1,74 @@
+<!DOCTYPE>
+   <html>
+   
+      <head>
+	  
+	     <meta charset="utf-8">
+		 <meta name="description" content="login into existed account">
+		 <meta name="viewport" content="width=device-width, intial-scale=1.0">
+		 <meta http-equiv="refresh" content="30">
+		 <title>signin</title>
+		 
+	  </head>
+	  
+	  <body style="background-color: #F5F5F5"   align="middle">
+	  
+	  
+	     	<table width="100%">
+
+		<tr>
+
+			<td width = "10%"> </td>
+			<td width = "50%"> <p style="color:#145FC1"><font face="Arial" size = "6"><img src= "../img/Abshir_logo.png" alt = "This is logo" width = "90px" height="100px" align="left"></font></p>
+			</td>
+
+			<td> 
+				<p align = "right"> <font face="Arial" size = "4" >
+				<a href="index.html">Home |</a>
+					<a href = "signup.html"> Signup |</a>
+					<a href = "signin.html"> Signin</a>
+				</font>
+				</p>
+			</td>
+			<td width = "10%"> </td>
+		</tr>
+	</table>
+
+	<hr />
+	  
+	  
+	     <form action="index.html" method="post">
+		    
+			<h2>log in here</h2><br><br>
+		 
+		    <label for="username">Username</label>
+			<input id="username" type="email" name="username" placeholder="username"><br><br>
+			
+			<label for="psd">Password</label>
+			<input id="psd" type="password" name="password" placeholder="password" maxlength="15" minlength="8"><br><br>
+			
+			<input type="submit" value="signin" >
+			<p>Not yet registered?<a href="signup.html">register</a> </p>
+		
+		 
+		 </form>
+		 
+		  <hr>
+		 
+		<table> 
+		 <tr>
+			<td> 
+				<p align = "left"> <font face="Arial" size = "4" ><a href = "index.html"> Podcast | </a>
+					<a href = "article.html"> Articles |</a>
+					<a href = "aboutus.html"> About Us |</a>
+					<a href = "contact_us.html"> Contact Us</a>
+				</font>
+				</p>
+			</td>
+			<td width = "10%"> </td>
+		</tr>
+		</table>
+	  
+	  </body>
+   
+   </html>
