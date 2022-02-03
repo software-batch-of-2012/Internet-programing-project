@@ -4,6 +4,7 @@
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/fontawesome.min.css" rel="stylesheet">
+    
     <title>Abishir commerce center</title>
 </head>
 
@@ -11,16 +12,18 @@
 
     <div class="wrapp">
         <div class="content">
-            <div class="nav">
+            <div class="nav" id="nav">
             <h1 class="logo">Abshir</h1>
-            <nav>
-                <ul>
+            <div class= "head">
+                <ul id="menulist">
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="car.html">Items</a></li>                    
                     <li><a href="index.html">About</a></li>
                     <li><a href="index.html">Contact</a></li>
-                    <li><a href="index.html">Items</a></li>                    
                 </ul>
-            </nav>
+            </div>
+            <i class="fas fa-bars" onclick="togglemenu()"></i>
+            
         </div>
         <div class="main">
         <div class="hero">
@@ -32,7 +35,7 @@
             </p>
             <div class="search">
                 <input type="search" placeholder="search">
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search""></i>
             </div>
         </div>
         </div>
@@ -85,7 +88,7 @@
             <div class="maincon">
                 <div class="card">
                     <div class="front">
-                        <h3>Employee</h3>
+                        <h3>Office</h3>
                         <img class="cimage" src="img/office/office1.jpg" alt="facebook">
                         <h3>Homes for sell and rent are here you can order know think it</h3>
                         
@@ -120,7 +123,7 @@
                 <div class="card">
                     <div class="front">
                         <h3>Car</h3>
-                        <img class="cimage" src="img/car/car2.jpg" alt="facebook">
+                        <img class="cimage" src="img/car/car1.png" alt="facebook">
                         <h3>Homes for sell and rent are here you can order know think it</h3>
                         
                     </div>
@@ -172,7 +175,7 @@
                     Then you will find a tone of houses avalable for you to choose. don't be shiy 
                     we are the trusted componey for 2 years you can see the sell stata in Home page.
                 </p>
-                <img src="img/car/car2.jpg" alt="" class="seimg">
+                <img src="img/car/car1.png" alt="" class="seimg">
             </div>
         </div>
         </div>
@@ -206,5 +209,7 @@
             </div>
         </div>
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
