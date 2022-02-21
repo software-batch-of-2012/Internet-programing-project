@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Signup</title>
+        <link href="css/css-signup.css" rel="stylesheet" type="text/css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script defer src="signup.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="header">
+
+                <h1 class="logo">Abshir</h1>
+                <nav>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="index.html">Items</a></li>                    
+                     </ul>
+                </nav>
+            </div>
+
+            <div class="main">
+
+                <h2 class="title">Register</h2>
+
+                <form action="index.html" class="form-detail" id="form" method="post" onsubmit="return myfun()">
+
+                    <div class="input-box">
+                        <label  for="firstname">First Name</label><br>
+                        <input class="box" type="text" id="firstname" >
+                        <i class="fas sucess">&#xf058;</i>
+					    <i class="fas error">&#xf06a;</i>
+                        <!-- <small class="message">error message</small> -->
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Last Name</label><br>
+                        <input class="box" type="text" id="lastname" >
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <!-- <small class="message">error message</small> -->
+                    </div>
+                    <div class="input-box">
+                        <label for="phone"> Phone</label><br>
+			            <input class="box" id="phone" type="tel" name="phone" >
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <!-- <small class="message">error message</small> -->
+                    </div>
+                    <div>
+                        <label for="sex">Gender</label><br>
+                        <div class="gender-detail">
+                            <input id="sex" type="radio" name="gender" value="Male" checked>Male
+                            <input id="sex" type="radio" name="gender" value="Female">Female
+                            <input id="sex" type="radio" name="gender" value="Other">Other
+                        </div>
+                       
+                    </div>
+                    <div class="input-box">
+                        <label for="user_name">username</label><br>
+			            <input class="box" id="user_name" type="text" name="username"  placeholder="username" >
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="input-box">
+                        <label for="mail">Email</label> <br>
+			            <input class="box" id="mail" type="email" name="email"  placeholder="email" size="25%">
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="input-box">
+                        <label for="psd">password</label><br>
+                        <input class="box" id="psd" type="password" name="password"  maxlength="15" minlength="8" placeholder="password">
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="input-box">
+                        <label for="c-psd">confirm password</label><br>
+                        <input class="box" id="c-psd" type="password" name="confirm password"  maxlength="15" minlength="8" placeholder="confirm password">
+                        <i class="fas sucess">&#xf058;</i>
+					<i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                    </div>
+                    <div class="input-box">
+                        <label for="acctype">Account type</label>
+                        <select class="sel" id="acctype" name="Account type" size="1">
+                            <option value="per">Personal</option>
+                            <option value="brok">Broker</option>
+                            <option value="comp">Company</option>
+                            <option value="other">Other</option>
+			            </select><br>
+                    </div>
+                    <div class="input-box">
+                        <label for="city">City</label>
+                        <select class="sel" id="city" name="city" size="1">
+
+                        <option value="AA">Addis Ababa</option>
+                        <option value="Naz">Adama(Nazret)</option>
+                        <option value="Arb">Arbaminch</option>
+                        <option value="Bd">Bahir Dar</option>
+                        <option value="Des">Dessie</option>
+                        <option value="Dire">Dire Dawa</option>
+                        <option value="Gig">Gigiga</option>
+                        <option value="Hawa">Hawasa</option>
+                        <option value="Gon">Gonder</option>
+                        <option value="Har">Harar</option>
+                        <option value="Mek">Mekele</option>
+                        
+                        </select><br>
+                    </div>
+                    <div id="error"></div>
+                    <div class="button">
+                        <input class="bot"  type="reset" value="Reset">
+			            <input class="bot" id="submit" type="submit" value="Submit">
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <div class="footer">
+
+                <div class="left">                
+                   
+                    
+                    <ul>
+                        <li> our Contact</li>
+                        <li class="item1">phone number</li>
+                        <li class="item2">content</li>
+                        <li class="item3">main office</li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    
+                    <ul>
+                        <li>Abishir plc copyright reserved &#169; </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                        <li><a href="index.html">Items</a></li>                    
+                    </ul>
+                
+                </div>
+
+                <div class="right">
+                    <p>terms and privacy</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
