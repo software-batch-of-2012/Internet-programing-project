@@ -58,11 +58,11 @@ colors
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nav i{
+.nav .links i .fas{
     color:#FFF;
     font-size: 15px;
     cursor: pointer;
-    display: none;
+    display: none !important;
 }
 
 .sticky {
@@ -80,7 +80,6 @@ colors
 .sticky .h1{
     color:#FFF;
 }
-
 .main{
     display: flex;
     width: 100%;
@@ -263,17 +262,6 @@ colors
     border-radius: 5px;
 }
 
-.grid2, .grid4{
-    height: 500px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-}
-.grid1, .grid3{
-    height: 500px;
-    padding:20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-}
-
 .maincon{
     position: relative;
     width: 340px;
@@ -355,6 +343,11 @@ colors
 
 .service .servicecont .con img{
     width: 100%;
+    flex-basis: 100%;
+    width: 600px;
+    height: 370px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 .service .servicecont .con p{
     width: 100%;
@@ -362,20 +355,13 @@ colors
     padding: 50px;
     text-align: center;
 }
-.con img{
-    flex-basis: 100%;
-    width: 600px;
-    height: 370px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-}
+
 .con img:hover{
     transition: 1s;
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, 
     rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-
 
 .footer{
     background-color: #00090D;
@@ -399,7 +385,15 @@ colors
 .foot .center .navfoot a{
     color: #FFF;
 }
+.nav #x{
+    display: none;
+}
+@media only screen and (min-width:700px){
+.nav i{
+    display: none !important;
 
+}
+}
 @media only screen and (max-width:700px){
     
     .nav{
@@ -407,21 +401,21 @@ colors
     }
     .nav ul{
         width: 100%;
-        display: none;
         position: absolute;
-        left:0;
+        left:-12300px;
+        background-color: #000000;
+        height: fit-content;
         top:70px;
         text-align: center;
         z-index: 19000;
     }
     .nav ul li{
-        display: block;
-        background-color: #000000;
+        display: block; 
     }
     .nav ul li a{
         font-size: 20px;
     }
-    .nav .links .fa-bars{
+    .nav .links .fas{
         display: block;
     }
 
