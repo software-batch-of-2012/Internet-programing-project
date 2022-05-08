@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signin</title>
+	    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="css-signin.css" type="text/css">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+        <script defer src="signin.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+
+            <div class="header">
+
+                <h1>Abshir</h1>
+                 <div class="links">
+                 <ul id="menulist"class="menu">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../item.html">Items</a></li>
+                            <li><a href="../about/aboutus.html">About</a></li>
+                            <li><a href="../contactuspage.html">Contact</a></li>
+                            <li><a href="signup.html">signup</a></li>
+                            <li><a href="singin.html">signin</a></li>
+                    </ul>
+    
+                <i class="fas fa-bars" id="l" onclick="togglemenu()"></i>
+                <i class="fas fa-times" id="x" onclick="cancel()"></i>
+                </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="main">
+
+                <div class="title">
+                   <h2>Signin here</h2>
+                </div>
+                
+                <form action="../item.html" method="post" id="form" onsubmit="return myfun()">
+                    <div class="input-box">
+                        <label  for="username">Username</label>
+			            <input  class="box1"  id="username" type="text" name="username" required placeholder="username">
+                        <i class="fas sucess">&#xf058;</i>
+					    <i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                        <br><br>
+                    </div>
+                    <div class="input-box">
+                        <label  for="psd">Password</label>
+                        <input class="box2" id="psd" type="password" name="password" required placeholder="password">
+                        <i class="fas sucess">&#xf058;</i>
+					    <i class="fas error">&#xf06a;</i>
+                        <small class="message">error message</small>
+                        <br><br>
+                        <span class = "error"> </span>
+                    </div>
+                    <div class="input-box">
+                        <input class="bot" type="submit" value="signin"  >
+			            <p>Not yet registered?<a href="signup.html">register</a> </p>
+                    </div>
+
+                </form>
+            </div>    
+
+            <div class="footer">
+                <p>Abishir plc copyright reserved &#169; </p>
+                <div class="foot">
+                <div class="left">
+                    <ul>
+                        <li>our Contact</li>
+                        <li>phone number</li>
+                        <li>content</li>
+                        <li>main office</li>
+                    </ul>
+                </div>
+                <div class="center">
+                    <nav class="navfoot">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="item.html">Items</a></li>
+                            <li><a href="about/aboutus.html">About</a></li>
+                            <li><a href="contactuspage.html">Contact</a></li>
+                            
+                            <li><a href="signup.html">signup</a></li>
+                            <li><a href="singin.html">signin</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        
+                <div class="right">
+                    <p>terms and privacy</p>
+                </div>
+            </div>
+            </div>
+    <script src="script.js"></script>
+
+        
+    </body>
+
+</html>
